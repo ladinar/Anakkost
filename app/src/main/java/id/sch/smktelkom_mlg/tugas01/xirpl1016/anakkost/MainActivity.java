@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private void doProcess() {
         if (isvalid()) {
             String nama = etnama.getText().toString();
-            tvHasil.setText("Terimakasih " + etnama + " Telah memesan " + spmakanan.getSelectedItem().toString() + " di Kriyuk Syek");
+            tvHasil.setText("Terimakasih " + nama + " Telah memesan " + spmakanan.getSelectedItem().toString() + " di Kriyuk Syek");
         }
     }
 
