@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,78 +11,110 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
     tools:context="id.sch.smktelkom_mlg.tugas01.xirpl1016.anakkost.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="75dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center"
         android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.15"
+        android:gravity="center_horizontal"
+        android:text="Kriuk Syek"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold|italic" />
 
     <TextView
         android:id="@+id/textView2"
         style="@style/Base.TextAppearance.AppCompat.Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu makan"
-        android:textColor="#1bc3c6" />
+        android:text="Menu Kriuk"
+        android:textColor="#6d0c17" />
 
-    <CheckBox
-        android:id="@+id/checkBoxpcl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignRight="@+id/textView"
-        android:checked="false"
-        android:text="Pecel" />
 
-    <CheckBox
-        android:id="@+id/checkBoxllp"
-        android:layout_width="wrap_content"
+    <Spinner
+        android:id="@+id/makanan"
+        android:layout_width="127dp"
         android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Lalapan" />
-
-    <CheckBox
-        android:id="@+id/checkBoxbbr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Bubur" />
+        android:entries="@array/makanan"
+        android:spinnerMode="dropdown" />
 
     <TextView
-        android:id="@+id/textView"
-        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:id="@+id/textView5"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
-        android:text="Menu minum"
-        android:textColor="#1b8ad9" />
+        android:text="Jumlah Pesanan"
+        android:textColor="#4c0606"
+        android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/checkBoxjer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Es Jeruk" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content" />
 
-    <CheckBox
-        android:id="@+id/checkBoxteh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Es Teh" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/checkBoxkop"
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jagung manis" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keju" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pedas" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Delivery" />
+
+        </RadioGroup>
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Ambil sendiri" />
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="false"
-        android:text="Kopi" />
+        android:layout_height="match_parent">
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView4"
@@ -87,10 +122,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pemesan"
-        android:textColor="#ee9528" />
+        android:textColor="#5f140d"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:textColor="#601818"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -108,3 +158,5 @@
         tools:text="Total Pesanan" />
 
 </LinearLayout>
+</ScrollView>
+
