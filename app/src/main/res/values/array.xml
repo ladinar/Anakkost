@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="makanan">
-        <item>Ayam Rp.6000</item>
-        <item>Singkong Rp.4000</item>
-        <item>Jamur Rp.4000</item>
-        <item>Kentang Rp.5000</item>
-        <item>Tahu Rp.4000</item>
+        <item>Ayam </item>
+        <item>Singkong </item>
+        <item>Jamur </item>
+        <item>Kentang</item>
+        <item>Tahu </item>
     </string-array>
 
 </resources>

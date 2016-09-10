@@ -41,13 +41,28 @@
         android:text="Menu Kriuk"
         android:textColor="#6d0c17" />
 
-
-    <Spinner
-        android:id="@+id/makanan"
-        android:layout_width="127dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/makanan"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/makanan"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:entries="@array/makanan"
         android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serba 5K"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView5"
@@ -59,7 +74,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/jumlah"
         android:layout_width="134dp"
         android:layout_height="wrap_content" />
 
@@ -97,7 +112,7 @@
             android:layout_gravity="center_horizontal">
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/delivery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -107,7 +122,7 @@
         </RadioGroup>
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/cash"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
@@ -117,7 +132,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textview"
         style="@style/Base.TextAppearance.AppCompat.Subhead"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -126,7 +141,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextNama"
+        android:id="@+id/pemesan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -140,7 +155,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/alamat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
