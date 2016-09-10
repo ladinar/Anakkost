@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etnama;
     EditText etalamat;
+    EditText etjumlah;
     Spinner spmakanan;
     TextView tvHasil;
     RadioButton delivery, cash;
@@ -29,8 +30,7 @@ public class MainActivity extends AppCompatActivity {
         tvHasil = (TextView) findViewById(R.id.textViewHasil);
         etnama = (EditText) findViewById(R.id.pemesan);
         etalamat = (EditText) findViewById(R.id.alamat);
-        /*delivery= (RadioButton) findViewById(R.id.delivery);
-        cash= (RadioButton) findViewById(R.id.cash);*/
+        etjumlah = (EditText) findViewById(R.id.jumlah);
 
         findViewById(R.id.buttonPesan).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,8 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void doProcess() {
         if (isvalid()) {
+            int ju = Integer.parseInt(etjumlah.getText().toString());
+            int hitung = 5000 * ju;
             String nama = etnama.getText().toString();
-            tvHasil.setText("Terimakasih " + nama + " Telah memesan " + spmakanan.getSelectedItem().toString() + " di Kriyuk Syek");
+            tvHasil.setText("Terimakasih " + nama + " Telah memesan " + spmakanan.getSelectedItem().toString() + " Kres di Kriyuk Syek" + "\n"
+                    + "Silahkan Anda membayar " + hitung);
         }
     }
 
