@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etjumlah;
     Spinner spmakanan;
     TextView tvHasil;
-    RadioButton delivery, cash;
+    RadioButton deliver;
     RadioGroup rgStatus;
 
     @Override
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         etnama = (EditText) findViewById(R.id.pemesan);
         etalamat = (EditText) findViewById(R.id.alamat);
         etjumlah = (EditText) findViewById(R.id.jumlah);
+        deliver = (RadioButton) findViewById(R.id.delivery);
 
         findViewById(R.id.buttonPesan).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
     private void doProcess() {
+
         if (isvalid()) {
             int ju = Integer.parseInt(etjumlah.getText().toString());
             int hitung = 5000 * ju;
@@ -51,9 +54,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isvalid() {
+
         boolean valid = true;
 
         String nama = etnama.getText().toString();
+        String alamat = etalamat.getText().toString();
+        if (deliver.isChecked()) {
+            if (alamat.isEmpty()) {
+                etalamat.setError("Alamat Belum diisi");
+            } else {
+                etalamat.setError(null);
+            }
+
+        }
 
         if (nama.isEmpty()) {
             etnama.setError("Nama Belum diisi");
