@@ -24,10 +24,10 @@
 ###pemberitahuan pada kotak pemesan dan alamat bila belum diisi
 
 #Gambar
-![image of screenshot 1][https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2VVczWmdHcmRCMWM/view?usp=sharing]
-![image of screenshot 2][https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2d0xqWERiMUZ6M3M/view?usp=sharing]
-![image of screenshot 3][https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2Q1FXZUhUZWxoVGs/view?usp=sharing]
-![image of screenshot 3][https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2MnhjenVac0ZYREU/view?usp=sharing]
+![image of screenshot 1](https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2VVczWmdHcmRCMWM/view?usp=sharing)
+![image of screenshot 2](https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2d0xqWERiMUZ6M3M/view?usp=sharing)
+![image of screenshot 3](https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2Q1FXZUhUZWxoVGs/view?usp=sharing)
+![image of screenshot 3](https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2MnhjenVac0ZYREU/view?usp=sharing)
 
 #Link download apk
 [download apk](https://drive.google.com/a/smktelkom-mlg.sch.id/file/d/0Bww07QNYf-W2QTlMX3ZnNmQwOTA/view?usp=sharing)
